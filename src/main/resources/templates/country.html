@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Greeting</title>
+</head>
+<body>
+    <header>LOGO SITO</header>
+    <main>
+        <h2 th:text="${username} + ' sta visitando il sito'"></h2>   
+        <h3 th:text="'collegandosi da ' + ${countryName}"></h3>
+        <h4 th:text="' Dove sono le ore ' + ${currentTime}"></h4> 
+        <h5 th:text="'del ' + ${currentDate}"></h5>    
+    </main>
+    <footer></footer>
+</body>
+</html>

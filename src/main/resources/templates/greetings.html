@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lxmlns:th "http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Greeting</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>LOGO SITO</header>
+    <main>
+        <h1>Greetings!</h1>
+        <h1 th:text="${name}"></h1>
+        <h2 th:text="'Il tuo Username è: ' + ${username}"></h2>   
+        <h3 th:text="'La tua email è: ' + ${email}"></h3>
+        <h4 th:text="'Oggi è il: ' + ${currentDate}"></h4>
+        <h5 th:text="' e sono le ore: ' + ${currentTime}"></h5>     
+    </main>
     <footer></footer>
 </body>
 </html>
